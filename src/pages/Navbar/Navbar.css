@@ -1,0 +1,93 @@
+/* Navbar.css */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(68 191 207);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.logo img{
+  height: 46px;
+  margin-left: 29px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none; /* Hide by default on larger screens */
+}
+
+/* Navbar.css */
+/* Add your existing styles */
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-right: 54px;
+}
+
+.add-to-cart{
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.add-to-cart,img{
+ height: 32px;
+}
+.login {
+  padding: 10px;
+  background-color:#191a1a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  
+}
+
+.add-to-cart:hover{
+color: #2980b9;
+    color: black;
+}
+.login:hover {
+  background-color: #2980b9;
+  background-color: #f1f1f1;
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  
+
+  .nav-links.mobile a {
+    color: white;
+  }
+}

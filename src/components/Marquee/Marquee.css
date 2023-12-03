@@ -1,0 +1,53 @@
+/* Marquee.css */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .marquee-content {
+    white-space: nowrap;
+    animation: marqueeAnimation 15s linear infinite;
+  }
+  
+  .new-text {
+    display: inline-block;
+    animation: colorChange 0.5s ease-in-out infinite;
+    opacity: 0; /* Start with 0 opacity */
+  }
+  .buy-text {
+    display: inline-block;
+    animation: colorChange1 0.5s ease-in-out infinite;
+    opacity: 0; /* Start with 0 opacity */
+  }
+  
+  @keyframes marqueeAnimation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes colorChange {
+    0%, 100% {
+      opacity: 0;
+      color: #98240a; /* Set the initial color */
+    }
+    50% {
+      opacity: 1;
+      color: #2db02d; /* Set the color midway through the animation */
+    }
+  }
+  
+    
+  @keyframes colorChange1 {
+    0%, 100% {
+      opacity: 0;
+      color: #ff5733; /* Set the initial color */
+    }
+    50% {
+      opacity: 1;
+      color: #4c00ff; /* Set the color midway through the animation */
+    }
+  }
