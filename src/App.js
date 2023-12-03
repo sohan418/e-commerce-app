@@ -14,7 +14,6 @@ const App = () => {
       </div>
       <div style={{"marginTop": "80px"}}>
         <Marquee />
-        <Marquee />
       </div>
       <ProductList products={products1}></ProductList>
       {/* <ProductList products= {product2}></ProductList> */}
